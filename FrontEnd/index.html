@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Crud</title>
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cadastro de Produtos</h1>
+
+      <form id="formProduto" class="form">
+        <div class="grid">
+          <input type="text" id="nome" placeholder="Nome" required />
+          <input type="text" id="descricao" placeholder="Descrição" />
+          <input type="number" id="preco" placeholder="Preço" required />
+          <input type="number" id="quantidade" placeholder="Estoque" />
+          <input type="text" id="marca" placeholder="Marca" />
+          <input type="text" id="modelo" placeholder="Modelo" />
+          <input type="number" id="garantia" placeholder="Garantia (meses)" />
+          <select id="categoria">
+            <option value="">Selecione uma categoria</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-primary">Salvar Produto</button>
+        <button type="button" id="btnCancelar" class="btn-cancel">
+          Cancelar
+        </button>
+      </form>
+
+      <h2>Produtos</h2>
+      <div id="listaProdutos" class="cards"></div>
+    </div>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
